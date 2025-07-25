@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #d8d7d7c5, rgba(163, 244, 255, 0.632) );
+}
+.shareContainer{
+    /* height: 50%; */
+    /* width: 80%; */
+    border: 2px solid rgba(169, 167, 167, 0.221);
+    border-radius: 1em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    gap: 2em;
+}
+.tagHeading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(51, 88, 99);
+}
+.tagHeading img{
+    height: 20px;
+    width: 20px;
+}
+.shareIcon{
+    padding: 1.3em;
+    border-radius: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.038);
+    background-color: rgba(215, 213, 213, 0.192);
+    transition: all;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+.iconContainer img{
+    height: 1.3em;
+    width: 1.3em;
+}
+.iconContainer{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: space-around;
+    text-align: center;
+    gap: 1em;
+    color: rgb(51, 88, 99);
+}
+.iconLinks{
+    transition: all;
+    transition-duration: .2s;
+    transition-timing-function: ease-in;
+}
+
+.iconLinks p{
+    margin-top: .6em;
+    font-size: small;
+}
+.anchorContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(128, 128, 128, 0.667);
+    font-weight: 600;
+    font-size: medium;
+    gap: 1.5em;
+}
+.anchorLink{
+    display: flex;
+    height: 3em;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7em;
+    border-radius: .5em;
+    width: 95%;
+}
+.anchorLink img{
+    height: 70%;
+}
+.anchorLink input{
+    border: none;
+    background-color: whitesmoke;
+}
+.anchorLink img:hover{
+    cursor: pointer;
+}
+.iconContainer .iconLinks:hover{
+    cursor: pointer;
+    color: orange;
+    font-weight: 600;
+}
+.shareIcon:hover{
+    background-color: rgba(255, 166, 0, 0.166);
+}
+#closeIcon:hover{
+    cursor: pointer;
+}
+input{
+    width: 100%;
+}
+
+@media screen and (max-width: 532px) {
+    .iconContainer{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+    .tagHeading h2{
+        font-size: medium;
+    }
+}
+
+
+
